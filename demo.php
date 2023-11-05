@@ -17,7 +17,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 
 // Insert the booking data into the database
-$sql = "INSERT INTO booking (name, phone) VALUES ('$name', '$phone')";
+$sql = "INSERT INTO booking (name, number) VALUES ('$name', '$phone')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Booking created successfully";
