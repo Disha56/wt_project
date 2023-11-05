@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+/* @font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+*::selection {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+   background-color: #000; /* Black background */
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1% 4%;
+}
+
+.nav-flex-row li a {
+    color: #ffffff;
+    font-size: 1.25vw;
+    text-transform: uppercase;
+    
+   
+}
+
+.section-intro {
+    height: 100%;
+    padding-top: 4%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    background-color: #000; /* Black background */
+
+}
+.section-intro img{
+    height: 150%;
+    width: 100%;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+   
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+    position: absolute;
+    margin-top: 70vh;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+    background-color: #000; /* Black background */
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+    font-size: 1vw;
+    text-transform: uppercase;
+    color:white;
+}
+
+.carousel-inner {
+    height: 700px;
+    background-color: #000; /* Black background */
+}
+
+.dc {
+    height: 100px;
+    width: 100%;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: #000; /* Black background */
+color:white;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+color:white;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+
+@media(max-width: 900px) {
+
+    .nav-flex-row li a {
+        color: #ffffff;
+        font-size: 11px;
+        text-transform: uppercase;
+        
+       
+    }
+
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+    .about-section h3 {
+        font-size: 2.5vw;
+    }
+
+    .link-to-book-wrapper {
+        flex: 1;
+        position: absolute;
+        margin-top: 25vh;
+        font-size: 10px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .dc {
+        height: 100px;
+        width: 100%;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .flex-column-form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 30px 20px;
+        font-size: 14px;
+    }
+
+    .row-flex h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 14px;
+        text-align: center;
+    }
+}
